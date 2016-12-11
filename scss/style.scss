@@ -1,0 +1,338 @@
+
+// import our variables first
+@import 'custom-variables';
+
+/* this is a comment */
+@import '../vendor/bootstrap/_bootstrap';
+
+//credit to https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+// This code is meant to keep aspect ratio fixed with regards width of parent.
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+//Additions to bootstrap classes
+
+
+.no-padding{
+    padding:0px;
+}
+
+.small-padding{
+    padding:$padding-size;
+}
+
+.med-padding{
+    padding:$padding-size*2;
+}
+
+.white{
+    color:white;
+}
+
+.move-up-tiny{
+    margin-top:-5%;
+}
+
+.move-up{
+    margin-top:-30%;
+}
+
+.move-up-med{
+    margin-top:-20%;
+}
+
+.move-up-small{
+    margin-top:-10%;
+}
+
+.move-up-lrg{
+    margin-top:-102%;
+}
+
+.margin-right{
+    margin-right:10px;
+}
+
+.move-down{
+margin-top:50px; 
+}
+
+.move-down-small{
+margin-top:20px;    
+}
+.move-down-med{
+    margin-top:40px;
+}
+.move-down-extreme{
+  margin-top:60px;   
+    
+}
+
+.center-content{
+    align-content: center;
+}
+
+
+
+.margin-vertical{
+    
+    margin-top: $margin-size;
+    margin-bottom: $margin-size;
+}
+
+.margin-left{
+    margin-left:$margin-size*1.2;
+}
+
+.margin-left-large{
+        margin-left:$margin-size*1.45;
+}
+.margin-bottom{
+    
+    margin-bottom: $margin-size;
+}
+
+.color-secondary{
+    background-color:$brand-secondary;
+}
+
+.position-down{
+    
+    position:relative;
+    top:15px;
+}
+
+.abs{
+    position:absolute;
+}
+// My additional components
+
+.top{
+  height: 720px;
+  background-image:url(../pics/header2.jpg); 
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+// since this is manipulated with media query, sign-in mobile must remain on top of sign-in in css code at all times!!
+ 
+    
+
+.sign-in{
+display: block;
+@include aspect-ratio(3, 1); // Keeping the box of sign in with proper aspect ratio when size is changed.
+width:50%;
+background-color: transparentize($brand-primary, 0.3);
+position:absolute;
+margin-top:10%;
+}
+
+.sign-in-mobile{
+@include aspect-ratio(2, 1);
+display:none;
+Width:100%;
+//height:40%;
+margin-top:20%;  
+}
+.sign-in-btn-mobile{
+    display:none;
+}
+
+
+
+
+
+#how-it-works-section{
+    height:600px;
+}
+
+.button-special-2{
+    border-style: solid;
+    border-color:$brand-primary;
+    width:130px;
+    text-align: center;
+    color:white;
+    background-color:$brand-primary;
+}
+
+.button-special{
+    border-style: solid;
+    border-color:$brand-secondary;
+    width:130px;
+    text-align: center;
+    color:white;
+    background-color: $brand-secondary;
+}
+
+.button-special-3{
+    border-style: solid;
+    border-color:$brand-secondary;
+    width:130px;
+    text-align: center;
+    color:white;
+    background-color: $brand-secondary;
+    
+}
+.margin-left{
+    margin-left:10px;
+}
+
+.logo-img{
+position:static;
+left:-10px;
+}
+
+.icon-howitworks{  //make larger
+    color:white;
+    background-color: $brand-primary;
+    height:100px;
+    width:100px;
+}
+
+.black{
+    color:black;
+}
+
+.fix-icon{
+margin-left: 20px;
+margin-top: 35px;
+}
+
+#animation1, #animation2, #animation3, #animation4, #animation5, #animation6, #animation7, #animation8, #animation9,#animation10,#animation11{
+    display:none;
+}
+ 
+
+#Connect-howitworks{
+        display:none;
+        position: relative;
+        top:300px;
+}
+
+#Engage-howitworks{
+        display:none;
+        position: relative;
+        top:300px;
+}
+
+//.x{
+//    position:fixed;
+//}
+//
+//
+//.tinted-image {
+//  background: 
+//    /* top, transparent red */
+//    linear-gradient(
+//      rgba(255, 0, 0, 0.45), 
+//      rgba(255, 0, 0, 0.45)
+//    ),
+//    /* your image */
+//    url(pics/Header.jpg);
+//}
+
+.body-login{ 
+  background-image:url(../pics/landscape_login_resize.png);
+}
+
+#testimonies{
+    background-color:transparentize($brand-primary, 0.9);
+}
+.quote{
+    
+    height:160px;
+    background-color:transparentize($brand-secondary, 0.85);;
+    padding:20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.by{
+    color:$quote-person;
+}
+
+@media screen and (max-width: 1000px){
+    .not-mobile-friendly{
+        display:none;
+    }
+    .move-down{
+        margin-top:20px;
+    }
+    .animation-part  {
+        display: none;    }
+   
+    .sign-in{
+            display:none;  }
+        
+        
+    .sign-in-mobile{
+        display:block;
+        position:absolute;
+    }
+
+    .email-index{
+        position:absolute;
+        bottom:0px;
+    }
+    .button-special-2{
+        position:absolute;
+        top:5px;
+        right:5px;
+        width:80px;
+    }
+    .margin-right{
+        margin-right:0px;
+        margin-left:15%;
+    }
+    .nav{
+        display:none;
+    }
+    
+    .sign-in-btn-mobile{
+    display:block;
+}
+    #how-it-works-section{
+    background-color:transparent;
+    height:750px;
+}
+
+    }
+
+.clickable{
+     cursor:pointer;
+}
+  
+.nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: transparent; }
+
+.button-special:hover {
+    color: $brand-secondary;
+    background-color:$brand-secondary;
+    border-color: $brand-secondary; }
+
+
+
+@media screen and (max-width: 400px){ 
+    #how-it-works-section{
+    background-color:transparent;
+    height:1000px;
+    }
+}    
+
+html{
+    width:100%;
+}
