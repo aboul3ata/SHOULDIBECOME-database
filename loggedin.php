@@ -221,7 +221,7 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/habib.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  JP Morgan </b> </span> </p>
       <p>Experience: <span ><b class="red"> Manager</b> </span> </p>
-          <p class="small-padding"> I manage a Hedge-Fund of 10 Million dollars. It takes a lot to be able to handle the amount of stress associated with my job. I am here to help you figure out of Finance is your thing.
+          <p class="small-padding"> I manage a Hedge-Fund of 10 Million dollars. It takes a lot to be able to handle the amount of stress associated with my job. I am here to help you figure out if Finance is your thing.
   </p><br>    
     </div>
             
