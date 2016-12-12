@@ -74,7 +74,7 @@ if( isset($_SESSION['user_id']) ){
    
     <div class="menu col-md-1  col-md-offset-7 move-down-tiny  not-mobile-friendly">  
         <div class="dropdown">
-           <img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" width="70%" class="clickable img-circle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">         
+           <img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" width="70%" class="clickable img-circle dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">         
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
             <li><a href="#">Profile</a></li>
             <li><a href="#">Messages</a></li>
@@ -86,7 +86,7 @@ if( isset($_SESSION['user_id']) ){
      </div>      
     
     <div class="col-xs-1  text-left not-mobile-friendly">   
-        <h3> <a class="glyphicon glyphicon-envelope" href="index.php"  ></a></h3>
+        <h3> <a class="glyphicon glyphicon-envelope" id="msgs" href="index.php"  ></a></h3>
     </div> 
 
 </div><!-- div  menu without logo --> 
@@ -103,7 +103,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="col-md-5 col-md-offset-3 col-xs-9 margin-right"> 
 <h4 class="text-primary center-block "> Please Select a career path you would like to know more about </h4>
  </div>   
-<div class="menu col-md-2 col-xs-1 margin-right no-border">  
+<div class="menu col-md-2 col-xs-1 margin-right  ">  
     <div class="dropdown">
         <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " id="txt1"> Proffesion  </p>  </div>      
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -147,7 +147,7 @@ if( isset($_SESSION['user_id']) ){
           <p class="small-padding"> Head of Smart Innovation Unit at Tesla Motors. Passionate about smart green technologies and their impact on the world</p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn1">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->
@@ -173,7 +173,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn2">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->    
@@ -199,7 +199,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary " id="btn3">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->   
@@ -225,7 +225,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn4">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->      
@@ -252,7 +252,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn5">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->       
@@ -277,7 +277,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn6">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->       

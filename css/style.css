@@ -6101,6 +6101,9 @@ sign-up-now {
   background-color: #18839a;
   border-color: #18839a; }
 
+#msgs:hover {
+  text-decoration: none; }
+
 @media screen and (max-width: 400px) {
   #how-it-works-section {
     background-color: transparent;
