@@ -43,7 +43,7 @@
         <input type="email" class="form-control" placeholder="Email" id="email">
     </div>
     <div class="col-md-3 col-md-offset-0 col-xs-3 med-padding  ">
-      <a href="register.php"><button type="submit" data-target="register.php" class=" btn btn-warning btn-md ">Sign-up</button></a>
+     <button type="submit" data-target="register.php" class=" btn btn-warning btn-md " id="sign-up-btn-mob">Sign-up</button>
     </div>
 </div>
 </div>
@@ -58,7 +58,7 @@
         <input type="email" class="form-control" placeholder="Email" id="email">
     </div>
     <div class="col-md-3 col-md-offset-0 col-xs-3 med-padding  ">
-      <button type="button" class=" btn btn-warning btn-md ">Sign-up</button>
+      <button type="button" class=" btn btn-warning btn-md "id="sign-up-btn" >Sign-up</button>
     </div>
 </div>
 </div>

@@ -103,7 +103,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="col-md-5 col-md-offset-3 col-xs-9 margin-right"> 
 <h4 class="text-primary center-block "> Please Select a career path you would like to know more about </h4>
  </div>   
-<div class="menu col-md-2 col-xs-1 margin-right ">  
+<div class="menu col-md-2 col-xs-1 margin-right no-border">  
     <div class="dropdown">
         <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " id="txt1"> Proffesion  </p>  </div>      
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -273,7 +273,7 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/violeta.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  WeStem </b> </span> </p>
       <p>Experience: <span ><b class="green">Student</b> </span> </p>
-          <p class="small-padding"> I am currently the Head of Westem organization that aims to empower women in stem and engineering majors.  
+          <p class="small-padding"> I am currently the Head of WeStem organization that aims to empower women in stem and engineering majors.  
   </p><br>    
     </div>
             

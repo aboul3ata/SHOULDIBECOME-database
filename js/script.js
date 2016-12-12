@@ -1,12 +1,27 @@
 $(document).ready(function() {
 
-$(document).ready( function() {
 $('.dropdown-toggle').dropdown();
-});
-    
-    
+
+    //basic functionalities of home page sign up button and logged in drop down
+$(function(){
+    $('#sign-up-btn').click(function(){
+        window.location='register.php'
+        console.log('button')
+    });
+});    
+
+$(function(){
+    $('#sign-up-btn-mob').click(function(){
+        window.location='register.php'
+        console.log('button')
+    });
+});    
     
 
+    
+//dynamically changing backgrund image    
+var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'];
+$('.top').css({'background-image': 'url(pics/' + images[Math.floor(Math.random() * images.length)] + ')'});    
 // logged in page dynamically changing text and mentors 
     
 var $jobselected = $('#txt1')    

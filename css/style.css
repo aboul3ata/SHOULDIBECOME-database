@@ -6105,5 +6105,8 @@ sign-up-now {
   #how-it-works-section {
     background-color: transparent;
     height: 1000px; } }
+.no-border {
+  border-style: none; }
+
 html {
   width: 100%; }

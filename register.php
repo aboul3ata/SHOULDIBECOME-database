@@ -59,13 +59,12 @@ endif;
 
         <div class="card card-container col-md-4 col-md-offset-4">
             <div class="col-md-8 col-md-offset-2">
-            <img id="profile-img" class="profile-img-card center-block img-responsive" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin" action="register.php" method="POST">
                 <span id="reauth-email" class="reauth-email"></span>
-                <input type="name" id="inputName" class="form-control bottom-margin" placeholder="Full Name" required autofocus name="email">
+                <input type="name" id="inputName" class="form-control margin-vertical" placeholder="Full Name" required autofocus name="email">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">                
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
+                <input type="password" id="inputPassword" class="form-control margin-vertical" placeholder="Password" required name="password">
                 <input type="password" id="inputconfirmPassword" class="form-control" placeholder="Confirm Password" required name="confirmpassword">
                 <div id="remember" class="checkbox">
                     <label class="white">
