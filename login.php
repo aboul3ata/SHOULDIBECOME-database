@@ -2,9 +2,9 @@
 
 session_start();
 
-if( isset($_SESSION['user_id']) ){
-	header("Location: /");
-}
+//if( isset($_SESSION['user_id']) ){
+//	header("Location: /");
+//}
 
 require 'database.php';
 
@@ -42,12 +42,14 @@ endif;
 </head>
 
 <body class="body-login">
-
-
-
+    
+        
+<!-- Wanted to put this message in a modal however i am not yet very confartable with php--> 
 	<?php if(!empty($message)): ?>
 		<p><?= $message ?></p>
-	<?php endif; ?>
+	<?php endif; ?>    
+
+
 <div class="container text-center med-padding sign-in-header">
 	<h1>Login</h1>
 	<span>or <a href="register.php">register here</a></span>    
@@ -78,5 +80,6 @@ endif;
         </div><!-- /card-container -->
     </div><!-- /container -->
 
+    
 </body>
 </html>

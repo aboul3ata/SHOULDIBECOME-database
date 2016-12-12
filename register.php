@@ -2,9 +2,9 @@
 
 session_start();
 
-if( isset($_SESSION['user_id']) ){
-	header("Location: /");
-}
+//if( isset($_SESSION['user_id']) ){
+//	header("Location: /");
+//}
 
 require 'database.php';
 
@@ -21,6 +21,8 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 
 	if( $stmt->execute() ):
 		$message = 'Successfully created new user';
+        $_SESSION['user_id'] = $results['id'];
+		header("Location:login.php");
 	else:
 		$message = 'Sorry there must have been an issue creating your account';
 	endif;
@@ -30,33 +32,54 @@ endif;
 ?>
 
 <!DOCTYPE html>
-<html>
+<html class="html-login">
 <head>
-	<title>Register Below</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<title>ShouldIBecome-Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-	<div class="header">
-		<a href="/">Your App Name</a>
-	</div>
+<body class="body-login">
+
+
 
 	<?php if(!empty($message)): ?>
 		<p><?= $message ?></p>
 	<?php endif; ?>
+<div class="container text-center med-padding sign-in-header">
+	<h1>Sign up</h1>
+	<span>or <a href="login.php">Login</a></span>    
+</div>     
 
-	<h1>Register</h1>
-	<span>or <a href="login.php">login here</a></span>
+    
+  <div class="container ">
 
-	<form action="register.php" method="POST">
-		
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="password" placeholder="and password" name="password">
-		<input type="password" placeholder="confirm password" name="confirm_password">
-		<input type="submit">
-
-	</form>
+        <div class="card card-container col-md-4 col-md-offset-4">
+            <div class="col-md-8 col-md-offset-2">
+            <img id="profile-img" class="profile-img-card center-block img-responsive" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" action="register.php" method="POST">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="name" id="inputName" class="form-control bottom-margin" placeholder="Full Name" required autofocus name="email">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">                
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
+                <input type="password" id="inputconfirmPassword" class="form-control" placeholder="Confirm Password" required name="confirmpassword">
+                <div id="remember" class="checkbox">
+                    <label class="white">
+                        <input type="checkbox" value="remember-me" > Remember me
+                    </label>
+                </div>
+                <button class="btn btn-primary btn-block btn-signin" type="submit">Register</button>
+            </form><!-- /form -->
+            <a href="#" class="forgot-password white">
+                Forgot the password?
+            </a>
+        </div>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
 
 </body>
 </html>

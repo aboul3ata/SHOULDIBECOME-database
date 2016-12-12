@@ -44,6 +44,11 @@
     color:white;
 }
 
+.move-right{
+    margin-left:17%;
+}
+
+
 .move-up-tiny{
     margin-top:-5%;
 }
@@ -255,11 +260,15 @@ margin-top: 35px;
 .quote{
     
     height:160px;
-    background-color:transparentize($brand-secondary, 0.85);;
+    background-color:transparentize($brand-secondary, 0.85);
     padding:20px;
     border-radius: 5px 5px 5px 5px;
 }
 
+sign-up-now{
+    
+    background-color:transparentize($brand-secondary, 0.85);    
+}
 .by{
     color:$quote-person;
 }
@@ -268,6 +277,12 @@ margin-top: 35px;
     .not-mobile-friendly{
         display:none;
     }
+    
+    .mobile-button{
+    
+    display:block;
+    
+}
     .move-down{
         margin-top:20px;
     }
@@ -315,6 +330,73 @@ margin-top: 35px;
      cursor:pointer;
 }
   
+.text-secondary{
+    color:$brand-secondary;
+}
+
+//.premium{
+//    border-style: solid;
+//    border-width: 1px;
+//    border-color:red;
+//    border-radius:17px 17px 17px 17px;
+//    width:100px;
+//    padding:2px;
+//    
+//}
+
+.red{
+    color:red;
+}
+
+.yellow{
+    color:darkgoldenrod;
+}
+
+.green{
+    color:green;
+}
+#username{
+    font-size: 18px;
+}
+#select-job{
+    color:$brand-secondary;
+    width:150px;
+    height:40px;
+    padding:8px;
+    border-raduis: 10px 10px 10px 10px;
+    background-color: transparentize($brand-primary, 0.3);
+    
+    
+}
+
+.plan-header{
+    background-color: #FD7622;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.plan-header-2{
+    background-color: $brand-secondary;
+    border-radius: 7px 7px 7px 7px;
+}
+.mobile-button{
+    
+    display:none;
+    
+}
+
+.free-membership{
+    background-color:aliceblue;
+    margin-top: -10px;
+    border-radius: 7px 7px 7px 7px;
+}
+.eng-card{
+    display: none;
+}
+
+.fin-card{
+    display: none;
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: transparent; }

@@ -43,7 +43,7 @@
         <input type="email" class="form-control" placeholder="Email" id="email">
     </div>
     <div class="col-md-3 col-md-offset-0 col-xs-3 med-padding  ">
-      <button type="button" class=" btn btn-warning btn-md ">Sign-up</button>
+      <a href="register.php"><button type="submit" data-target="register.php" class=" btn btn-warning btn-md ">Sign-up</button></a>
     </div>
 </div>
 </div>
@@ -132,9 +132,9 @@
         </div> 
             
     <!-- there seems to be a problem with col-offset-0 for this version of bootstrap therefore the last section is very close to the (right) end of the page -->
-            <div class="row"> 
+            <div class="row move-down-small"> 
 <!--                part 1 finding mentors-->
-                <div class="col-md-offset-1 col-md-2 col-md-3 col-xs-10 col-xs-offset-1 " id="Search-howitworks">
+                <div class="col-md-offset-0 col-md-2 col-md-3 col-xs-10 col-xs-offset-1 " id="Search-howitworks">
                     <div class="icon+heading"> 
                         <div  class="img-circle icon-howitworks col-xs-4 col-xs-offset-4"><h1 class="fix-icon glyphicon glyphicon-search"> </h1> 
                         <h4 class="text-center black push-down margin-vertical move-down-huge position-down">Search </h4>
@@ -268,9 +268,61 @@
     
   </div>     
 </div><!-- End of Testimonies section-->      
-                
+        
+ <!-- Plans-->
+<div class="container">      
+    <div class="row ">
+     <div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-5 ">
+         <div class="plan-header"> 
+         <h3 class="text-center white med-padding"> <b> Free Membership </b></h3>
+        </div>     
+        <div>
+        <div class="free-membership">   
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Access to a wide range of people in different careers</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Connect to up to 5 people at a time</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Get the best career advise out there</p>
+         
+         </div>     
+          </div>  
+            </div>        
 
-
+    
+            <div class="col-xs-10 col-md-5 col-xs-offset-1 col-md-offset-1">
+         <div class="plan-header-2"> 
+         <h3 class="text-center white med-padding"> <b> Premium Membership </b></h3>
+        </div>     
+        <div>
+        <div class="free-membership">   
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Access of Executive Directors and CEO's of big companies</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Unlimited number of connections</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Get Notified when Mentors have job openings</p>
+         
+         </div>                     
+</div>           
+ </div> 
+        
+        
+</div>        
+</div> <!-- div container--> 
+        
+        
+<!-- SIGN UP NOW!! -->
+        
+<!--
+<div class="sign-up-now">
+   
+<div class="row quote">
+<h3 class="text-primary text-center med-padding"><b>  Now is your chance to explore the career of your dream</b></h3>           
+<div class="col-xs-4 col-xs-offset-5">
+  
+    
+<a class="button-special btn-lg" href="register.php"  > Sign up</a>
+</div>
+    
+</div>        
+</div>        
+-->
+        
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>

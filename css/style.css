@@ -5819,6 +5819,9 @@ button.close {
 .white {
   color: white; }
 
+.move-right {
+  margin-left: 17%; }
+
 .move-up-tiny {
   margin-top: -5%; }
 
@@ -5992,12 +5995,18 @@ button.close {
   padding: 20px;
   border-radius: 5px 5px 5px 5px; }
 
+sign-up-now {
+  background-color: rgba(24, 131, 154, 0.15); }
+
 .by {
   color: #667278; }
 
 @media screen and (max-width: 1000px) {
   .not-mobile-friendly {
     display: none; }
+
+  .mobile-button {
+    display: block; }
 
   .move-down {
     margin-top: 20px; }
@@ -6037,6 +6046,51 @@ button.close {
     height: 750px; } }
 .clickable {
   cursor: pointer; }
+
+.text-secondary {
+  color: #18839a; }
+
+.red {
+  color: red; }
+
+.yellow {
+  color: darkgoldenrod; }
+
+.green {
+  color: green; }
+
+#username {
+  font-size: 18px; }
+
+#select-job {
+  color: #18839a;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  border-raduis: 10px 10px 10px 10px;
+  background-color: rgba(222, 122, 0, 0.7); }
+
+.plan-header {
+  background-color: #FD7622;
+  border-radius: 7px 7px 7px 7px; }
+
+.plan-header-2 {
+  background-color: #18839a;
+  border-radius: 7px 7px 7px 7px; }
+
+.mobile-button {
+  display: none; }
+
+.free-membership {
+  background-color: aliceblue;
+  margin-top: -10px;
+  border-radius: 7px 7px 7px 7px; }
+
+.eng-card {
+  display: none; }
+
+.fin-card {
+  display: none; }
 
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;

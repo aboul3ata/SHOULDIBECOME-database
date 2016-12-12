@@ -2,7 +2,30 @@ $(document).ready(function() {
 
 $(document).ready( function() {
 $('.dropdown-toggle').dropdown();
-});    
+});
+    
+    
+    
+
+// logged in page dynamically changing text and mentors 
+    
+var $jobselected = $('#txt1')    
+ $("#engineer").click(function(){
+        $('.eng-card') .css('display' , 'block');
+        $('.fin-card') .css('display' , 'none');     
+        if ( $jobselected.text() != 'Engineer' )    
+            $jobselected.text('Engineer');  
+            console.log('hi')
+    });    
+    
+ $("#finance").click(function(){
+        $('.fin-card') .css('display' , 'block');
+        $('.eng-card') .css('display' , 'none');
+        if ( $jobselected.text() != 'Finance' )    
+            $jobselected.text('Finance');  
+            console.log('hi2')
+    });      
+    
     
 var $opacity_animation=0.1;
 var $opacity_change=0.1;
