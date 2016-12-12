@@ -6,7 +6,7 @@ require 'database.php';
 
 if( isset($_SESSION['user_id']) ){
 
-	$records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+	$records = $conn->prepare('SELECT id,email,password,name FROM users WHERE id = :id');
 	$records->bindParam(':id', $_SESSION['user_id']);
 	$records->execute();
 	$results = $records->fetch(PDO::FETCH_ASSOC);
@@ -28,18 +28,19 @@ if( isset($_SESSION['user_id']) ){
 <!-- using bootstrap card (availble in V4) -->       
 
  
-<!--    Add Meta tag for description-->
+<!--    Meta tag for description-->
+<meta name="Should I become" content="Should I Become offers a unique mentoring experience. It connects students and Fresh Graduates to people well-established in their career whome offer them advice and career guidance.">      
+      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <title> ShouldIBecome </title>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">  
-   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
  <!--  This fixes the issue with Glyphicons not displaying when using customizable bootstrap   -->
-        <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="responsive-menu.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="responsive-menu.min.css">
 
     
-    
+   <title> ShouldIBecome </title>    
     
     
     </head>
@@ -48,8 +49,42 @@ if( isset($_SESSION['user_id']) ){
     
     
     
-    
     <body>  
+        
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your inbox</h4>
+      </div>
+      <div class="modal-body">
+        You have no new messages
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+        
+        
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Congrats</h4>
+      </div>
+      <div class="modal-body">
+        Your request has been sent!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>        
     	<?php if( !empty($user) ): ?>
 
 
@@ -86,15 +121,31 @@ if( isset($_SESSION['user_id']) ){
      </div>      
     
     <div class="col-xs-1  text-left not-mobile-friendly">   
-        <h3> <a class="glyphicon glyphicon-envelope" id="msgs" href="index.php"  ></a></h3>
+        <h3> <a class="glyphicon glyphicon-envelope" id="msgs" data-toggle="modal" data-target="#myModal"  ></a></h3>
     </div> 
 
 </div><!-- div  menu without logo --> 
 </div> <!-- div entire menu -->  
 
+<!-- Hamburger menu icon not loading so mobile menu not yet implemented  -->        
+<!--
+<div class="menu col-md-1  col-md-offset-7 move-down-tiny  ">  
+        <div class="dropdown">
+            <h3 width="70%" class="clickable glyphicon glyphicon-menu-hamburger dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></h3>         
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Mentors</a></li>              
+            <li role="separator" class="divider"></li>
+            <li><a class="color-secondary" width="100%" href="index.php" >Log out</a></li>
+          </ul>
+        </div>
+     </div>              
+-->
+        
 <div class=row> 
 <div col-xs-4 col-xs-offset-4> 
-<h2 class="text-center move-up-tiny small-padding"> <span class="text-secondary"> Welcome</span> <span class="text-secondary" id="username"> <?= $user['email']; ?> </span>  </h2>           
+<h2 class="text-center move-up-tiny small-padding"> <span class="text-secondary"> Welcome</span> <span class="text-secondary" id="username"> <?= $user['name']; ?> </span>  </h2>           
 </div>
 </div>            
             
@@ -144,10 +195,10 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/12670463_1681122332152831_6449868596331004583_n.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b> Tesla </b> </span> </p>
       <p>Experience: <span ><b class="red"> Manager </b> </span> </p>
-          <p class="small-padding"> Head of Smart Innovation Unit at Tesla Motors. Passionate about smart green technologies and their impact on the world</p><br>    
+          <p class="small-padding"> Head of Smart Innovation Unit at Tesla Motors. Passionate about smart green technologies and their impact on the world.</p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary" id="btn1">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn1" data-toggle="modal" data-target="#myModal2" >+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->
@@ -169,11 +220,11 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/ahmed%20aboukheir.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  Snapchat </b> </span> </p>
       <p>Experience: <span ><b class="yellow"> +5 Years </b> </span> </p>
-          <p class="small-padding">I have recently been hired at Snapchat as part of their core development team. There is a lot of qualified people out there that are just too afraid to apply to big companies. I am here for them!
+          <p class="small-padding">I have been recently hired at Snapchat as part of their core development team. There is a lot of qualified people out there that are just too afraid to apply to big companies. I am here for them!
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary" id="btn2">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn2" data-toggle="modal" data-target="#myModal2">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->    
@@ -199,7 +250,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary " id="btn3">+ Connect</button>
+    <button class="w3-btn-block bg-primary " id="btn3" data-toggle="modal" data-target="#myModal2" >+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->   
@@ -221,11 +272,11 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/habib.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  JP Morgan </b> </span> </p>
       <p>Experience: <span ><b class="red"> Manager</b> </span> </p>
-          <p class="small-padding"> I manage a Hedge-Fund of 10 Million dollars. It takes a lot to be able to handle the amount of stress associated with my job. I am here to help you figure out if Finance is your thing.
+          <p class="small-padding"> I manage a Hedge-Fund of 10 Million dollars. It takes a lot to be able to handle the amount of stress associated with my job. I am here to help you figure out if finance is your thing.
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary" id="btn4">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn4" data-toggle="modal" data-target="#myModal2">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->      
@@ -252,7 +303,7 @@ if( isset($_SESSION['user_id']) ){
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary" id="btn5">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn5" data-toggle="modal" data-target="#myModal2">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->       
@@ -273,11 +324,11 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/violeta.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  WeStem </b> </span> </p>
       <p>Experience: <span ><b class="green">Student</b> </span> </p>
-          <p class="small-padding"> I am currently the Head of WeStem organization that aims to empower women in stem and engineering majors.  
+          <p class="small-padding"> I am currently the Head of WeStem Organization that aims to empower women in stem and engineering majors.  
   </p><br>    
     </div>
             
-    <button class="w3-btn-block bg-primary" id="btn6">+ Connect</button>
+    <button class="w3-btn-block bg-primary" id="btn6" data-toggle="modal" data-target="#myModal2">+ Connect</button>
   </div>
 </div>            
  </div><!-- end of card-->       
@@ -295,8 +346,6 @@ if( isset($_SESSION['user_id']) ){
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
         
 <script type='text/javascript' src="vendor/FlowType.JS-master/flowtype.js"> </script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
 <script src="js/script.js"> </script>
 
   </body>

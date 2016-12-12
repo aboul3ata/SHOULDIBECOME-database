@@ -13,10 +13,11 @@ $message = '';
 if(!empty($_POST['email']) && !empty($_POST['password'])):
 	
 	// Enter the new user in the database
-	$sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+	$sql = "INSERT INTO users (email,name, password) VALUES (:email,:name,:password)";
 	$stmt = $conn->prepare($sql);
 
 	$stmt->bindParam(':email', $_POST['email']);
+    $stmt->bindParam(':name', $_POST['name']);
 	$stmt->bindParam(':password', password_hash($_POST['password'], PASSWORD_BCRYPT));
 
 	if( $stmt->execute() ):
@@ -62,7 +63,7 @@ endif;
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin" action="register.php" method="POST">
                 <span id="reauth-email" class="reauth-email"></span>
-                <input type="name" id="inputName" class="form-control margin-vertical" placeholder="Full Name" required autofocus name="email">
+                <input type="name" id="inputName" class="form-control margin-vertical" placeholder="Full Name" required autofocus name="name">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">                
                 <input type="password" id="inputPassword" class="form-control margin-vertical" placeholder="Password" required name="password">
                 <input type="password" id="inputconfirmPassword" class="form-control" placeholder="Confirm Password" required name="confirmpassword">

@@ -5,12 +5,13 @@
 <!--    Add Meta tag for description-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-
-    <title> ShouldIBecome </title>
-  
+    <meta name="Should I become" content="Should I Become offers a unique mentoring experience. It connects students and Fresh Graduates to people well-established in their career whome offer them advice and career guidance.">    
    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
  <!--  This fixes the issue with Glyphicons not displaying when using customizable bootstrap   -->
         <link rel="stylesheet" href="css/style.css">
+      
+      
+          <title> ShouldIBecome </title>
     </head>
   
     <body>   
@@ -292,7 +293,7 @@
          <h3 class="text-center white med-padding"> <b> Premium Membership </b></h3>
         </div>     
         <div>
-        <div class="free-membership">   
+        <div class="free-membership margin-bottom">   
         <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Access of Executive Directors and CEO's of big companies</p>
         <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Unlimited number of connections</p>
         <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Get Notified when Mentors have job openings</p>

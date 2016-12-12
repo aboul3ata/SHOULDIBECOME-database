@@ -1,8 +1,8 @@
 <?php
 $server = 'localhost';
-$username = 'root';
-$password = 'secret';
-$database = 'login';
+$username = 'aboulatt_ali';
+$password = '@Aboul3ata';
+$database = 'aboulatt_login';
 
 try{
 	$conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
