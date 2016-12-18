@@ -156,7 +156,7 @@ if( isset($_SESSION['user_id']) ){
  </div>   
 <div class="menu col-md-2 col-xs-1 margin-right  ">  
     <div class="dropdown">
-        <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " id="txt1"> Profession     <span class="caret"></span> </p>  </div>      
+        <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " ><span id="txt1">  Profession </span>     <span class="caret"></span> </p>  </div>      
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li id="ast"><a href="#">Astronaut</a></li>
         <li><a href="#">Basketball Player</a></li>
