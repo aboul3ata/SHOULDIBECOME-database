@@ -2,10 +2,12 @@
 <html>
 
   <head>
-<!--    Add Meta tag for description-->
+<!--    Meta tag for description-->
+    <meta name="Should I become" content="Should I Become offers a unique mentoring experience. It connects students and Fresh Graduates to people well-established in their career whome offer them advice and career guidance.">  
+      
+      
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <meta name="Should I become" content="Should I Become offers a unique mentoring experience. It connects students and Fresh Graduates to people well-established in their career whome offer them advice and career guidance.">    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">  
    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
  <!--  This fixes the issue with Glyphicons not displaying when using customizable bootstrap   -->
         <link rel="stylesheet" href="css/style.css">
@@ -202,7 +204,7 @@
     </div><!-- div for quote itself -->    
     <div class="row">
     <div class="col-xs-12 small-padding by"> 
-    <p>Deemah Omari, UN Intern</p>
+    <p>Deemah Omari, United Nation's Intern</p>
     </div>
     </div>
 
@@ -235,7 +237,7 @@
     </div>
     
     <div class="col-md-9 col-xs-12 ">
-    <p> "I have used Should I Become to connect with people working in all different field until I finally figured I want to be Pilot."</p>
+    <p> "I used Should I Become to connect with people working in all different fields until I finally figured I want to be Pilot."</p>
     </div><!-- div for quote itself -->    
     <div class="row">
     <div class="col-xs-12 small-padding by"> 
@@ -279,8 +281,8 @@
         </div>     
         <div>
         <div class="free-membership">   
-        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Access to a wide range of people in different careers</p>
-        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Connect to up to 5 people at a time</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Access to a wide range of mentors in different careers</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Connect to up to 5 mentors at a time</p>
         <p class="med-padding by"><span class="glyphicon glyphicon-ok text-primary"></span> Get the best career advise out there</p>
          
          </div>     
@@ -294,9 +296,9 @@
         </div>     
         <div>
         <div class="free-membership margin-bottom">   
-        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Access of Executive Directors and CEO's of big companies</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Access to Executive Directors and CEO's of big companies</p>
         <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Unlimited number of connections</p>
-        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Get Notified when Mentors have job openings</p>
+        <p class="med-padding by"><span class="glyphicon glyphicon-ok text-secondary"></span> Get notified when mentors have job openings</p>
          
          </div>                     
 </div>           
@@ -319,18 +321,22 @@
     
 <a class="button-special btn-lg" href="register.php"  > Sign up</a>
 </div>
-    
+     navbar-fixed-bottom
 </div>        
 </div>        
 -->
         
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-        
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         
+        <div class="footer text-center footercustom"> This is a mock-up website. All companies advertised here are not affiliated with this website. </div>    
+        
+        
+        
+        
+        
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>       
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
 <script type='text/javascript' src="vendor/FlowType.JS-master/flowtype.js"> </script>
 <script src="js/script.js"> </script>
 

@@ -22,6 +22,7 @@ $(function(){
 //dynamically changing backgrund image    
 var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'];
 $('.top').css({'background-image': 'url(pics/' + images[Math.floor(Math.random() * images.length)] + ')'});    
+
 // logged in page dynamically changing text and mentors 
     
 var $jobselected = $('#txt1')    
@@ -172,10 +173,10 @@ $(window).on('scroll', function() {
 
     if(y_scroll_pos > scroll_pos_test) {
     tl.resume();
-    console.log("hi")
+    console.log("hi animation")
     }else{
     tl.pause();  
-        console.log("bye")    
+        console.log("bye animation")    
     }
     
 

@@ -6051,7 +6051,7 @@ sign-up-now {
   color: #18839a; }
 
 .red {
-  color: red; }
+  color: #18839a; }
 
 .yellow {
   color: darkgoldenrod; }
@@ -6086,11 +6086,8 @@ sign-up-now {
   margin-top: -10px;
   border-radius: 7px 7px 7px 7px; }
 
-.eng-card {
-  display: none; }
-
-.fin-card {
-  display: none; }
+.red2 {
+  color: red; }
 
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
@@ -6113,3 +6110,19 @@ sign-up-now {
 
 html {
   width: 100%; }
+
+.w3-card-4 {
+  height: 400px;
+  position: relative; }
+
+.w3-btn-block {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
+.tpcrd {
+  height: 20%; }
+
+.footercustom {
+  background-color: rgba(24, 131, 154, 0.7);
+  color: white; }

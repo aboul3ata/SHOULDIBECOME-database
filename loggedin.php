@@ -56,7 +56,7 @@ if( isset($_SESSION['user_id']) ){
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Your inbox</h4>
+        <h4 class="modal-title" id="myModalLabel">Inbox</h4>
       </div>
       <div class="modal-body">
         You have no new messages
@@ -74,7 +74,7 @@ if( isset($_SESSION['user_id']) ){
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Congrats</h4>
+        <h4 class="modal-title" id="myModalLabel">Congratulations!!</h4>
       </div>
       <div class="modal-body">
         Your request has been sent!!
@@ -121,7 +121,7 @@ if( isset($_SESSION['user_id']) ){
      </div>      
     
     <div class="col-xs-1  text-left not-mobile-friendly">   
-        <h3> <a class="glyphicon glyphicon-envelope" id="msgs" data-toggle="modal" data-target="#myModal"  ></a></h3>
+        <h3> <a class="glyphicon glyphicon-envelope clickable" id="msgs" data-toggle="modal" data-target="#myModal"  ></a></h3>
     </div> 
 
 </div><!-- div  menu without logo --> 
@@ -152,19 +152,19 @@ if( isset($_SESSION['user_id']) ){
             <!-- Select Career Path-->         
 <div class="row"> 
 <div class="col-md-5 col-md-offset-3 col-xs-9 margin-right"> 
-<h4 class="text-primary center-block "> Please Select a career path you would like to know more about </h4>
+<h4 class="text-primary center-block "> Please select a career path you would like to know more about </h4>
  </div>   
 <div class="menu col-md-2 col-xs-1 margin-right  ">  
     <div class="dropdown">
-        <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " id="txt1"> Proffesion  </p>  </div>      
+        <div class="clickable color-secondary dropdown-toggle" id="select-job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><p class="text-center white " id="txt1"> Profession     <span class="caret"></span> </p>  </div>      
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li id="ast"><a href="#">Astronaut</a></li>
         <li><a href="#">Basketball Player</a></li>
         <li><a href="#">Dancer</a></li>                         
         <li><a href="#">Doctor</a></li>
-        <li id="engineer"><a href="#">Engineer <span class="red"> (Try me)</span></a></li>
+        <li id="engineer"><a href="#">Engineer <span class="red2"> (Try me)</span></a></li>
         <li><a href="#">Fashion Blogger</a></li>
-        <li id="finance"><a href="#">Finance <span class="red"> (Try me)</span></a></li>          
+        <li id="finance"><a href="#">Finance <span class="red2"> (Try me)</span></a></li>          
         <li><a href="#">Graphic Designer</a></li>
         <li><a href="#">HR specialist </a></li> 
         <li><a href="#">Journalist</a></li>           
@@ -183,7 +183,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="w3-container">
 
   <div class="w3-card-4" style="width:100%">
-    <header class="w3-container  bg-warning">  
+    <header class="w3-container  bg-warning tpcrd">  
       <h3 class="text-center">John Doe</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
@@ -208,7 +208,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="w3-container">
 
   <div class="w3-card-4" style="width:100%">
-    <header class="w3-container  bg-warning">  
+    <header class="w3-container  bg-warning tpcrd">  
       <h3 class="text-center">Ahmed Kheir</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
@@ -234,7 +234,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="w3-container">
 
   <div class="w3-card-4" style="width:100%">
-    <header class="w3-container  bg-warning">  
+    <header class="w3-container  bg-warning tpcrd">  
       <h3 class="text-center"> Liam Kirwan</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
@@ -246,7 +246,7 @@ if( isset($_SESSION['user_id']) ){
       <img src="pics/mentors/liam.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
       <p>Work: <span ><b>  M.I.T </b> </span> </p>
       <p>Experience: <span ><b class="green"> PHD student</b> </span> </p>
-          <p class="small-padding"> I am currently pursuing my PHD degree at M.I.T in Chip manufacturing. Hit me up if you need any help on the application process at M.I.T
+          <p class="small-padding"> I am currently pursuing my PHD degree at M.I.T in Chip manufacturing. Hit me up if you need any help with application process at M.I.T
   </p><br>    
     </div>
             
@@ -257,10 +257,10 @@ if( isset($_SESSION['user_id']) ){
     
     
 <div class="col-md-3  col-xs-12 margin-bottom fin-card" id="card4">   
-<div class="w3-container">
+<div class="w3-container crdsp" >
 
   <div class="w3-card-4" style="width:100% ">
-    <header class="w3-container bg-warning">  
+    <header class="w3-container bg-warning tpcrd">  
       <h3 class="text-center"> Adam Habib</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
@@ -287,7 +287,7 @@ if( isset($_SESSION['user_id']) ){
 <div class="w3-container">
 
   <div class="w3-card-4" style="width:100%">
-    <header class="w3-container bg-warning">  
+    <header class="w3-container bg-warning tpcrd">  
       <h3 class="text-center"> Momchil Dianov</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
@@ -312,8 +312,8 @@ if( isset($_SESSION['user_id']) ){
 <div class="w3-container">
 
   <div class="w3-card-4" style="width:100%">
-    <header class="w3-container bg-warning">  
-      <h3 class="text-center"> Violeta Zlatkova</h3>
+    <header class="w3-container bg-warning tpcrd">  
+      <h3 class="text-center"> Violeta Zkova</h3>
         <div class="col-xs-3>">  
       <div class="premium">           
       <p class="text-center move-down-tiny red"><b> </b></p></div>  
@@ -336,9 +336,9 @@ if( isset($_SESSION['user_id']) ){
         
  </div>   <!-- end of card row-->
 
-       
+   
 
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
         
 <script src="responsive-menu.js"></script>        
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
