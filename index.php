@@ -161,7 +161,7 @@
                     </div>
                     <div class= "col-xs-9 col-xs-offset-2 margin-vertical med-padding">
 
-                        <p class="">You can connect up-to 5 people of different experience levels. You can also connect with people who decided this profession was not for them.</p> <!-- search by company is not implemented in this version yet -->
+                        <p class="">You can connect with up-to 5 people of different experience levels. You can also connect with people who decided this profession was not for them.</p> <!-- search by company is not implemented in this version yet -->
                     </div>      
                 </div>
                 
